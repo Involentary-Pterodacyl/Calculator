@@ -1,3 +1,24 @@
+const input = document.querySelector("input");
+const plus = document.getElementById("add");
+const minus = document.getElementById("minus");
+const devide = document.getElementById("devide");
+const mult = document.getElementById("multiply");
+let num1 = 0;
+let num2 = 0;
+let operateor;
+
+
+
+
+
+
+
+
+
+
+
+
+
 // const add = function(num1, num2) {
 
 //     return num1 + num2
