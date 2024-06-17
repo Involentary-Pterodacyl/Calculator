@@ -2,3 +2,24 @@ html {
   height: 100%;
   width: 100%;
 }
+
+section {
+    border:solid black 2px;
+    display:flexbox;
+    flex-direction:row;
+    justify-content:wrap;
+    width: 170px;
+    height: 70px;
+}
+
+button {
+    width:80px;
+    margin-left:1px;
+}
+
+input {
+    height:20px;
+    width:160px;
+    margin-bottom:2px;
+    margin-left:1px;
+}
