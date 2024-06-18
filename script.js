@@ -15,12 +15,16 @@ const b3 = document.getElementById("3")
 const b2 = document.getElementById("2")
 const b1 = document.getElementById("1")
 const b0 = document.getElementById("0")
+let operator 
+let num1 = 0;
 
 function addOperator(op) {
-    p.innerText += " " + op + "  ";
+    operator = op;
+    num1 = Number(p.innerText);
+    p.innerText = "";
 }
 function addNum(num) {
-    p.innerText += num
+    p.innerText += num;
 }
 plus.onclick = function() {
     addOperator("+");
@@ -69,5 +73,86 @@ clear.onclick = function() {
 }
 
 equal.onclick = function() {
-    p.innerText = eval(p.innerText);
+    let num = Number(p.innerText);
+   if (operator == "+") {
+       p.innerText = num1 + num;
+   }
+    if (operator == "-") {
+        p.innerText = num1 - num;
+    }
+    if (operator == "/") {
+        p.innerText = num1 / num;
+    }
+    if (operator == "*") {
+        p.innerText = num1 * num
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const add = function(num1, num2) {
+
+//     return num1 + num2
+// };
+
+// const subtract = function(num1, num2) {
+
+//   return num1-num2
+// };
+
+// const sum = function(array) {
+//     len = array.length
+//   let finalNum = 0
+//   for (let x = 0; x < len; x++) {
+//     finalNum += array.at(x)
+//   }
+
+//   return finalNum
+// };
+
+// const multiply = function(array) {
+//   len = array.length
+//   let finalNum = array.at(0) * array.at(1)
+//   if (len < 3) {
+//     return finalNum
+//   } else {
+//   for (let x = 2; x < len; x++) {
+//     finalNum *= array.at(x)
+//   }
+//   console.log(finalNum)
+//   return finalNum
+// }
+
+// };
+
+// const power = function(num1, num2) {
+//   let finalNum = num1
+//     for (let x = 1; x < num2; x++) {
+//     finalNum *= num1
+//   }
+
+//   return finalNum
+// };
+
+// const factorial = function(num) {
+//   let finalNum = 1
+//     if (num == 0) {
+//     return finalNum
+//   } else {
+//     for( let x = 2; x <= num; x++){
+//       finalNum *= x
+//     }
+//     return finalNum
+//   }
+// };
